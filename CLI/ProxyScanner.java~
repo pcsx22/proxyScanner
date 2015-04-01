@@ -58,9 +58,9 @@ public class ProxyScanner {
         ArrayList<String>proxyList = new ArrayList();
         Scanner S = new Scanner(System.in);
         System.out.println("Enter URL - https://");
-        String URL = "https://" + S.next();
+        String URL = "http://" + S.next();
         if(URL.contains("www."))
-            URL = "https://" + URL.substring(4, URL.length());
+            URL = "http://" + URL.substring(4, URL.length());
        for(int i = 1;i<100;i++){
            String Str = Base + i;
             proxyList.add(Str);
