@@ -1,5 +1,5 @@
 # proxyScanner
-This is a small java program that lists the working proxy address for a given url, similar program can be written in python + url.
+This is a small java program that lists the working proxy address for a given url(for NITW), similar program can be written in python + urllib.
 
 There's a GUI and CLI version of the program. GUI version ain't stable, it has some threading issues. 
 
