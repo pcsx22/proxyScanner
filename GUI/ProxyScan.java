@@ -140,7 +140,10 @@ public class ProxyScan extends javax.swing.JFrame {
     }//GEN-LAST:event_scanBtnMouseClicked
     
     public void findMain(){
-        String url = "https://" + urlBar.getText();
+        String url = urlBar.getText();
+        if(url.contains("www."))
+            url = url.substring(4, url.length());
+        url = "https://" + urlBar.getText();
         ArrayList<Thread>ThreadList = new ArrayList();
         for(int i = 0;i<proxyList.size();i++){
             ThreadList.add(new Thread(new ScannerThread(proxyList.get(i),url)));
